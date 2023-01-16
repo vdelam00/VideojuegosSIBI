@@ -1,0 +1,17 @@
+<div class="company-list">
+  <table mat-table [dataSource]="companies" class="mat-elevation-z8" *ngIf="companies">
+    <!-- Name Column -->
+    <ng-container matColumnDef="nombre">
+      <th mat-header-cell *matHeaderCellDef>Nombre</th>
+      <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
+    </ng-container>
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+  </table>
+  <mat-paginator
+    class="mat-elevation-z8"
+    [pageSizeOptions]="[10]"
+    showFirstLastButtons
+  >
+  </mat-paginator>
+</div>

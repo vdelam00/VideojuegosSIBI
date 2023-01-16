@@ -1,0 +1,24 @@
+<div class="dashboard">
+  <div class="ranking">
+    <div class="videogame header">
+      <div class="name">
+        <span class="position marginLeft"></span
+        ><span class="label">Videojuego</span>
+      </div>
+      <!--Igual cambiar aqui a la funcion para que me lo muestre el setRanking-->
+      <div class="score">Puntuación</div>
+    </div>
+    <div class="videogame" *ngFor="let videogame of videogames; let i = index">
+      <div class="name">
+        <mat-icon
+          *ngIf="i < 3"
+          [ngClass]="{ gold: i === 0, silver: i === 1, bronze: i === 2 }"
+          >star</mat-icon
+        ><span class="position" [ngClass]="{ marginLeft: i > 2 }"
+          >{{ i + 1 }}º</span
+        ><span class="label">{{ videogame.nombre }}</span>
+      </div>
+      <div class="score">{{ videogame.ranking }}</div>
+    </div>
+  </div>
+</div>

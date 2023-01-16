@@ -1,0 +1,23 @@
+.game-list {
+  padding: 20px;
+}
+.iconContainer {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  span {
+    margin-left: 10px;
+  }
+  .gray {
+    color: rgb(99, 97, 97);
+  }
+  .red {
+    color: rgb(255, 78, 78);
+  }
+  .green {
+    color: rgb(153, 247, 134);
+  }
+  .pointer {
+    cursor: pointer;
+  }
+}

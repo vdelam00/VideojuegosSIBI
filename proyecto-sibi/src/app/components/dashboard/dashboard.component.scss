@@ -1,0 +1,60 @@
+.dashboard {
+  height: calc(100vh - 64px);
+  background-image: url("/assets/fondo-dashboard.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .ranking {
+    margin-top: -80px;
+    width: 600px;
+    max-width: 50%;
+    .videogame {
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgb(97 97 97 / 38%);
+      font-weight: bold;
+      height: 30px;
+      border-bottom: 1px solid #000;
+      color: #fff;
+      &.header {
+        margin-bottom: 10px;
+        background-color: rgba(97, 97, 97, 0.6);
+      }
+      .name {
+        width: calc(100% - 90px);
+        display: flex;
+        align-items: center;
+        .position {
+          margin-right: 10px;
+        }
+        .marginLeft {
+          margin-left: 30px;
+        }
+        mat-icon {
+          &.gold {
+            color: rgb(229, 166, 94);
+          }
+          &.silver {
+            color: rgb(169, 169, 169);
+          }
+          &.bronze {
+            color: rgb(92, 57, 22);
+          }
+          height: 30px;
+          margin-right: 5px;
+        }
+      }
+      .score {
+        width: 90px;
+        display: flex;
+        justify-content: end;
+        padding-right: 10px;
+      }
+    }
+  }
+}
